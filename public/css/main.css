@@ -52,10 +52,11 @@ td,th{
 
 .table-wraper{
   padding-top: 100px;
-  height: calc(100vh - 150px);
+  min-height: calc(100vh - 150px);
 }   
 
 a {
+  font-weight: bold;
   text-decoration: none; }
 
 .header-fixed {
@@ -227,4 +228,7 @@ textarea {
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
+}
+.error-handler{
+  color: red;
 }

@@ -72,7 +72,7 @@ require('views/template/header.php');
             <span class="text-after-iput"> Социальный статус</span>
           </p>
           <p>
-            <input type="text" name="address"/>
+            <input type="text" name="home_address"/>
             <span class="text-after-iput"> Место жительства</span>
           </p>
         </fieldset >
@@ -152,7 +152,7 @@ require('views/template/header.php');
         </p>
         <p>
           <label class="label-top" for="mail">Email:</label>
-          <input class="last-text-input" id="mail" type="email" name="mail" required><br>
+          <input class="last-text-input" id="mail" type="email" name="email" required><br>
         </p>
         
         <fieldset class="input-group leg-no-padding">
@@ -192,7 +192,7 @@ require('views/template/header.php');
           </p>
         </fieldset>
       </fieldset>
-      <div id="error-handler"></div>
+      <div id="error-handler" class="error-handler"></div>
       <input type="submit" class="btn btn-success" value="Отправить">
     </form>
   </section>

@@ -8,6 +8,7 @@ require('views/template/header.php');
           <th>ID</th>
           <th>Name</th>
           <th>Surname</th>
+          <th>E-mail</th>
           <th>Gender</th>
           <th>B-day</th>
           <th>Family status</th>

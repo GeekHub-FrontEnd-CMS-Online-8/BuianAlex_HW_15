@@ -10,10 +10,10 @@
 <body>
   <header class="header-fixed">
     <div class="wraper flex-jc-c">
-      <a href="./index.html"><h1 class="logo">Home Work PHP + MySQL</h1></a>
+      <a href="/"><h1 class="logo">Home Work PHP + MySQL</h1></a>
       <nav class="main-nav">
         <ul>
-          <?php echo $_SERVER['REQUEST_URI']=="/"?'<li><a href="/form">Add user</a></li>'  :'  <li><a href="/">Table</a></li>'?>
+          <?php echo $_SERVER['REQUEST_URI']=="/"?'<li><a href="/form">ADD USER</a></li>'  :'  <li><a href="/">Table</a></li>'?>
           
         </ul>
       </nav>

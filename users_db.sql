@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Час створення: Лют 17 2019 р., 21:16
+-- Час створення: Лют 18 2019 р., 00:58
 -- Версія сервера: 5.6.41
 -- Версія PHP: 5.5.38
 
@@ -34,18 +34,17 @@ CREATE TABLE `users_tb` (
   `surname` tinytext NOT NULL,
   `gender` tinytext NOT NULL,
   `b_day` text NOT NULL,
-  `family_status` int(11) NOT NULL,
+  `family_status` text NOT NULL,
   `home_address` text NOT NULL,
-  `hobby` int(11) NOT NULL
+  `email` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп даних таблиці `users_tb`
 --
 
-INSERT INTO `users_tb` (`id`, `name_user`, `surname`, `gender`, `b_day`, `family_status`, `home_address`, `hobby`) VALUES
-(50, 'Александр', 'Буян', 'male', '', 0, '37', 0),
-(51, 'Ирина', 'КУУ', 'male', 'одружена', 0, '', 0);
+INSERT INTO `users_tb` (`id`, `name_user`, `surname`, `gender`, `b_day`, `family_status`, `home_address`, `email`) VALUES
+(121, 'Aleksandr', 'Buian', 'male', '1981-05-30', '', '', 'test@test');
 
 --
 -- Індекси збережених таблиць
@@ -65,7 +64,7 @@ ALTER TABLE `users_tb`
 -- AUTO_INCREMENT для таблиці `users_tb`
 --
 ALTER TABLE `users_tb`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
